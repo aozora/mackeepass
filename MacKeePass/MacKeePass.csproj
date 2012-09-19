@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28E08CA1-057F-4683-88DE-1FA75B6987DB}</ProjectGuid>
+    <ProjectTypeGuids>{948B3504-5B70-4649-8FE4-BDE1FB46EC69};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MacKeePass</RootNamespace>
+    <AssemblyName>MacKeePass</AssemblyName>
+    <ReleaseVersion>0.1.0</ReleaseVersion>
+    <SynchReleaseVersion>False</SynchReleaseVersion>
+    <Description>Native OS X Cocoa porting of the popular KeePass Password Safe application.</Description>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\Build</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeMonoRuntime>True</IncludeMonoRuntime>
+    <PlatformTarget>x86</PlatformTarget>
+    <EnablePackageSigning>False</EnablePackageSigning>
+    <ConsolePause>False</ConsolePause>
+    <EnableCodeSigning>False</EnableCodeSigning>
+    <CreatePackage>False</CreatePackage>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeMonoRuntime>False</IncludeMonoRuntime>
+    <LinkMode>Full</LinkMode>
+    <PlatformTarget>x86</PlatformTarget>
+    <EnablePackageSigning>False</EnablePackageSigning>
+    <ConsolePause>False</ConsolePause>
+    <EnableCodeSigning>False</EnableCodeSigning>
+    <CreatePackage>False</CreatePackage>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeMonoRuntime>True</IncludeMonoRuntime>
+    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+    <PlatformTarget>x86</PlatformTarget>
+    <LinkMode>Full</LinkMode>
+    <EnableCodeSigning>True</EnableCodeSigning>
+    <ConsolePause>False</ConsolePause>
+    <EnablePackageSigning>True</EnablePackageSigning>
+    <CreatePackage>True</CreatePackage>
+    <CodeSigningKey>3rd Party Mac Developer Application</CodeSigningKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="MonoMac" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="MainWindow.designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="AppDelegate.designer.cs">
+      <DependentUpon>AppDelegate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseCommands.cs" />
+    <Compile Include="Models\GroupModel.cs" />
+    <Compile Include="Models\TreeGroupModel.cs" />
+    <Compile Include="UI\SecureEdit.cs" />
+    <Compile Include="PasswordWindow.cs" />
+    <Compile Include="PasswordWindow.designer.cs">
+      <DependentUpon>PasswordWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ResourceHelper.cs" />
+    <Compile Include="UI\NSImageAndTextCell.cs" />
+    <Compile Include="UI\NSImageAndTextView.cs" />
+    <Compile Include="UI\SidebarDataSource.cs" />
+    <Compile Include="UI\SidebarDelegate.cs" />
+    <Compile Include="UI\SidebarEventArgs.cs" />
+    <Compile Include="UI\SidebarListItem.cs" />
+    <Compile Include="UI\MainToolbarDelegate.cs" />
+    <Compile Include="Models\EntryModel.cs" />
+    <Compile Include="UI\EntriesDataSource.cs" />
+    <Compile Include="Config\Configuration.cs" />
+    <Compile Include="Config\EntryColumn.cs" />
+    <Compile Include="Config\ColumnType.cs" />
+    <Compile Include="Controllers\MainWindowController.cs" />
+    <Compile Include="Controllers\PasswordWindowController.cs" />
+    <Compile Include="EditWindow.cs" />
+    <Compile Include="EditWindow.designer.cs">
+      <DependentUpon>EditWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EditWindowController.cs" />
+    <Compile Include="PreferencesWindow.cs" />
+    <Compile Include="PreferencesWindow.designer.cs">
+      <DependentUpon>PreferencesWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PreferencesWindowController.cs" />
+    <Compile Include="Utils\DefaultKeePassLogger.cs" />
+    <Compile Include="Utils\StringExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainWindow.xib" />
+    <InterfaceDefinition Include="MainMenu.xib" />
+    <InterfaceDefinition Include="PasswordWindow.xib" />
+    <InterfaceDefinition Include="EditWindow.xib" />
+    <InterfaceDefinition Include="PreferencesWindow.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="App_Data\MyAccounts.kdbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />
+  <ItemGroup>
+    <Content Include="folder_add.png" />
+    <Content Include="keys_add.png" />
+    <Content Include="db_open.png" />
+    <Content Include="AppIcon.icns" />
+    <Content Include="db-add.icns" />
+    <Content Include="db-open.icns" />
+    <Content Include="db-save.icns" />
+    <Content Include="edit-form.icns" />
+    <Content Include="key.icns" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KeePassLib\KeePassLib.csproj">
+      <Project>{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}</Project>
+      <Name>KeePassLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+</Project>

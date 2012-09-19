@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacKeePass", "MacKeePass\MacKeePass.csproj", "{28E08CA1-057F-4683-88DE-1FA75B6987DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeePassLib", "KeePassLib\KeePassLib.csproj", "{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		AppStore|x86 = AppStore|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28E08CA1-057F-4683-88DE-1FA75B6987DB}.AppStore|x86.ActiveCfg = AppStore|x86
+		{28E08CA1-057F-4683-88DE-1FA75B6987DB}.AppStore|x86.Build.0 = AppStore|x86
+		{28E08CA1-057F-4683-88DE-1FA75B6987DB}.Debug|x86.ActiveCfg = Debug|x86
+		{28E08CA1-057F-4683-88DE-1FA75B6987DB}.Debug|x86.Build.0 = Debug|x86
+		{28E08CA1-057F-4683-88DE-1FA75B6987DB}.Release|x86.ActiveCfg = Release|x86
+		{28E08CA1-057F-4683-88DE-1FA75B6987DB}.Release|x86.Build.0 = Release|x86
+		{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}.AppStore|x86.ActiveCfg = Debug|Any CPU
+		{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}.AppStore|x86.Build.0 = Debug|Any CPU
+		{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MacKeePass\MacKeePass.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.TabWidth = 3
+		$1.IndentWidth = 3
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.IndentSwitchBody = True
+		$2.ElseNewLinePlacement = NewLine
+		$2.CatchNewLinePlacement = NewLine
+		$2.FinallyNewLinePlacement = NewLine
+		$2.WhileNewLinePlacement = NewLine
+		$2.BlankLinesAfterUsings = 3
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 3
+		$3.IndentWidth = 3
+		$3.inheritsSet = VisualStudio
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 120
+		$4.TabWidth = 3
+		$4.IndentWidth = 3
+		$4.inheritsSet = VisualStudio
+		$4.inheritsScope = text/plain
+		$4.scope = application/vnd.apple-interface-builder
+		$0.XmlFormattingPolicy = $5
+		$5.inheritsSet = null
+		$5.scope = application/vnd.apple-interface-builder
+		$0.TextStylePolicy = $6
+		$6.FileWidth = 120
+		$6.TabWidth = 3
+		$6.IndentWidth = 3
+		$6.inheritsSet = VisualStudio
+		$6.inheritsScope = text/plain
+		$6.scope = application/xml
+		$0.XmlFormattingPolicy = $7
+		$7.inheritsSet = Mono
+		$7.inheritsScope = application/xml
+		$7.scope = application/xml
+		$0.TextStylePolicy = $8
+		$8.FileWidth = 120
+		$8.TabWidth = 3
+		$8.IndentWidth = 3
+		$8.inheritsSet = VisualStudio
+		$8.inheritsScope = text/plain
+		$8.scope = application/config+xml
+		$0.XmlFormattingPolicy = $9
+		$9.inheritsSet = null
+		$9.scope = application/config+xml
+		$0.TextStylePolicy = $10
+		$10.FileWidth = 120
+		$10.TabWidth = 3
+		$10.IndentWidth = 3
+		$10.inheritsSet = VisualStudio
+		$10.inheritsScope = text/plain
+		$10.scope = text/microsoft-resx
+		$0.XmlFormattingPolicy = $11
+		$11.inheritsSet = null
+		$11.scope = text/microsoft-resx
+		$0.StandardHeader = $12
+		$12.Text = 
+		$12.IncludeInNewFiles = True
+	EndGlobalSection
+EndGlobal

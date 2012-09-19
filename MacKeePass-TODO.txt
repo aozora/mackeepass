@@ -1,0 +1,76 @@
+MACKEEPASS:
+      NSDate - DateTime: http://lists.ximian.com/pipermail/mono-osx/2006-September/000614.html
+
+      EntryModel ==> change password to SecureString
+
+
+=====> fix textbox 
+
+      - create key file 
+
+      - toolbar:
+            - new db
+            - open db
+            - save db
+            - new entry
+
+      - menu:
+            + close
+            + lock workspace
+            + change masterkey
+            
+- show for expiry items with top alert panel
+
+- save modified entry to db
+
+- check password errors
+
+- growl
+
+
+- drag or menu or toolbar open 
+      ==> request pwd
+            - try open db
+                  - ko ==> alert + back to start
+                  - ok ==> fill UI
+
+
+
+
+- Selected Entry: 
+- copy username & pwd: http://cocoadev.com/wiki/CopyAndPaste
+
+- resources: images, ...
+	- add images to panels/windows
+
+- lock file db
+- save db changes
+
+- edit entry
+- remove entry
+- add new entry
+
+- search:
+	search all entries/current group
+
+- rename group
+- delete group
+
+---------------------------------------------------------------------
+TODO:
+      - iCloud storage
+      - entry attachment, history, backup
+
+---------------------------------------------------------------------
+
+TESTS:
+      - new db with/out pwd
+      - check password null
+
+
+
+http://cocoa-mono.org/archives/153/kvc-kvo-and-cocoa-bindings-oh-my-part-1/
+http://tirania.org/monomac/archive/2010/Dec-07.html
+
+
+
